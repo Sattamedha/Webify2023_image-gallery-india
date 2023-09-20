@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Gallery - India</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+		<h3 class="full-name">Sattamedha Chowdhury - CSEAI2023040 - RCCIIT</h3>
+	
+      <div class="full-img" id="fullimgBox">
+      	<img src="A1.jpg" id="fullimg">
+      	<span onclick="closefullimg()">x</span>
+      </div>
+	<div class="img-gallery">
+		<img src="A1.jpg" onclick="openfullimg(this.src)">
+		<img src="A2.jpg" onclick="openfullimg(this.src)">
+		<img src="A3.jpg" onclick="openfullimg(this.src)">
+		<img src="A4.jpg" onclick="openfullimg(this.src)">
+		<img src="B1.jpg" onclick="openfullimg(this.src)">
+		<img src="B2.jpg" onclick="openfullimg(this.src)">
+		<img src="B3.jpg" onclick="openfullimg(this.src)">
+		<img src="B4.jpg" onclick="openfullimg(this.src)">
+		<img src="C1.jpg" onclick="openfullimg(this.src)">
+		<img src="C2.jpg" onclick="openfullimg(this.src)">
+		<img src="C4.jpg" onclick="openfullimg(this.src)">
+		<img src="C3.jpg" onclick="openfullimg(this.src)">
+		<img src="D1.jpg" onclick="openfullimg(this.src)">
+		<img src="D2.jpg" onclick="openfullimg(this.src)">
+		<img src="D3.jpg" onclick="openfullimg(this.src)">
+		<img src="D4.jpg" onclick="openfullimg(this.src)">
+		<img src="E1.jpg" onclick="openfullimg(this.src)">
+		<img src="E2.jpg" onclick="openfullimg(this.src)">
+		<img src="E3.jpg" onclick="openfullimg(this.src)">
+		<img src="E4.jpg" onclick="openfullimg(this.src)">
+	</div>
+
+
+<script>
+
+	var fullimgBox = document.getElementById("fullimgBox");
+	var fullimg = document.getElementById("fullimg");
+
+    function openfullimg(pic){
+      fullimgBox.style.display = "flex";
+      fullimg.src = pic;
+    }
+
+    function closefullimg(){
+    fullimgBox.style.display = "none";
+
+
+    }
+</script>
+</body>
+</html>
